@@ -1,10 +1,10 @@
 # DevOpsMobileApllicationDevelopment
 
-In the file RepositoryList + ManualAnalysis, all the data on the repositories are taken into account, including a sample of 2000 commits, and a commit hash spreadsheet.
+In the file **RepositoryList + ManualAnalysis**, all the data on the repositories are taken into account, including a sample of 2000 commits, and a commit hash spreadsheet.
 
 
-In the folder First Analysis there are the following files:
-* 01 - DataCleaning.
+In the folder **First Analysis** there are the following files:
+* **01 - DataCleaning**.
 
 This script in Python performs a series of operations for cleaning and manipulating data in a CSV file. Initially, the necessary libraries such as Pandas, Path from pathlib, math, matplotlib (with alias plt), and NumPy are imported. Next, the code reads a CSV file called 'SampleCommits.csv' and creates a dataframe called df. Once the dataframe has been created, some columns that appear to be irrelevant for the subsequent analysis are removed.
 
@@ -12,7 +12,7 @@ The code then deals with the handling of missing values (NaN), checking for the 
 
 Finally, the cleaned dataframe is saved in a new CSV file called 'dataframeCleaned.csv'. This script is designed to prepare and clean the data, making it more suitable for future analysis or processing.
 
-* 02 - GeneralMachineLearningMethods+Accuracy
+* **02 - GeneralMachineLearningMethods+Accuracy**.
 
 This Python script represents an approach to the automatic classification of software commit messages using machine learning techniques. The main goal is to develop and evaluate different classification models to automatically assign labels to commit categories. This task is crucial for better understanding the nature of changes within a software project and for facilitating the management and analysis of large volumes of commits.
 
@@ -28,7 +28,7 @@ To assess the effectiveness of each model, cross-validation is performed on test
 
 In conclusion, the script provides a comprehensive overview of the training and evaluation process for text classification models to automatically assign categories to software commit messages. This methodology is essential for improving efficiency and accuracy in managing changes within a software project.
 
-* 03 - DataCleaning_DataSet1
+* **03 - DataCleaning_DataSet1**.
 
 This Python script revolves around the preparation and cleaning of commit metadata, extracted from a CSV file named 'Commits_metadata_p1.csv'. The primary objective is to streamline the dataset for subsequent analysis by removing unnecessary columns and handling missing values.
 
@@ -48,7 +48,7 @@ Lastly, the cleaned dataframe is saved to a new CSV file named 'dataframe1_AllCo
 
 In summary, the script exemplifies a fundamental data-cleaning process, emphasizing the importance of preparing datasets to ensure accuracy and reliability in subsequent analytical endeavors.
 
-* 04 - DataCleaning_DataSet2
+* **04 - DataCleaning_DataSet2**.
 
 This Python script is dedicated to refining and preparing to commit metadata sourced from the 'Commits_metadata_p2.csv' file. The process involves a series of steps aimed at optimizing the dataset for subsequent analyses.
 
@@ -66,7 +66,7 @@ Lastly, the cleaned dataframe is saved to a new CSV file named 'dataframe2_AllCo
 
 In summary, this script underscores a meticulous data cleaning process, emphasizing the removal of unnecessary columns and the handling of missing values to ensure the dataset's readiness for comprehensive analysis.
 
-* 05 - SDG_dataframe1
+* **05 - SDG_dataframe1**.
 
 This Python script focuses on implementing a machine-learning model for text classification within commit messages.
 
@@ -78,7 +78,7 @@ Finally, the trained model is applied to new data, specifically, commit names in
 
 Overall, the script demonstrates a comprehensive procedure from training a text classification machine learning model to applying it to new data.
 
-* 06 - SDG_dataframe2
+* **06 - SDG_dataframe2**.
 
 In this Python script, the focus is on leveraging machine learning techniques for text classification, specifically applied to commit messages in a software development context. The script utilizes scikit-learn, a popular machine learning library, to implement a Support Vector Machine (SGDClassifier) for categorizing commit messages into predefined categories.
 
@@ -93,9 +93,9 @@ Subsequently, the script introduces a new dataset from another CSV file ('datafr
 In essence, this script showcases the application of machine learning to automate the categorization of commit messages, enabling more efficient management and analysis of software development activities. The use of a pipeline and the SGDClassifier reflects a thoughtful approach to text classification, demonstrating the versatility and power of machine learning in the context of software engineering.
 
 
-In the folder Final Analysis
+In the folder **Final Analysis** there are the following files:
 
-* 01 - DataCleaning_NewSample
+* **01 - DataCleaning_NewSample**.
 
 This Python script revolves around the reading and cleaning of data from a CSV file named 'NewSample.csv'. The process involves importing essential libraries such as Pandas for data manipulation and utilizing the Path module from pathlib for handling file paths.
 
@@ -107,19 +107,19 @@ Finally, the cleaned dataframe is saved to a new CSV file named 'NewDF_cleaned_A
 
 In essence, this script streamlines the dataset by handling missing values and provides a cleaned version for potential future analysis.
 
-* 02 - GeneralMachineLearningMethods + Accuracy_NewSample
+* **02 - GeneralMachineLearningMethods + Accuracy_NewSample**.
 
 This Python script is an engineering endeavor dedicated to automating the categorization of commit messages. By integrating essential libraries and constructing a text classification pipeline, the primary goal is to explore and evaluate the effectiveness of various machine learning models. 
 
 From Support Vector Machines to Neural Networks, the focus is on gaining an in-depth understanding of the performance of each model in the intricate task of automatically assigning categories to commit messages. In this context, the script stands as a comprehensive exploration of text classification techniques applied to the specific realm of version control.
 
-* 03 - GeneralMachineLearningMethods + Accuracy, Precision, Recall, F1-Score
+* **03 - GeneralMachineLearningMethods + Accuracy, Precision, Recall, F1-Score**.
 
 This Python script is dedicated to the automated classification of commit messages using a variety of machine-learning models. Through the importation of essential libraries and the creation of a text classification pipeline, the code explores models such as Support Vector Machine, Decision Tree, Naive Bayes, Stochastic Gradient Descent, Neural Network, and Random Forest. 
 
 The data is split into training and testing sets, and for each model, precision, recall, F1-score, and accuracy metrics are evaluated. This implementation provides a comprehensive overview of the performance of various machine learning models in the context of automatically categorizing commit messages.
 
-* 04 - SVC & SDG + Accuracy, Precision, Recall, F1-Score, ROC, PR, K-Fold Cross-Validation, t-SNE
+* **04 - SVC & SDG + Accuracy, Precision, Recall, F1-Score, ROC, PR, K-Fold Cross-Validation, t-SNE**.
 
 This Python script is designed to implement and evaluate text classification models, primarily focusing on multi-class classification tasks. Its functionalities include importing essential libraries, reading cleaned commit message data from a CSV file, separating messages and categories, splitting the data into training and testing sets, selecting and evaluating models such as Linear Support Vector Classifier (`LinearSVC`) and Stochastic Gradient Descent (`SGDClassifier`) using cross-validation. 
 
@@ -127,7 +127,7 @@ The code also implements the Binary Relevance approach for multi-class classific
 
 Finally, it presents a t-SNE visualization for dimensionality reduction, representing data points on a 2D plot with distinct colors for each class and a customized legend.
 
-* 05 - DataCleaning_Dataset1
+* **05 - DataCleaning_Dataset1**.
 
 This Python script focuses on cleaning and preparing data extracted from a CSV file containing information about software repository commits. It utilizes the Pandas library for data manipulation and pathlib for managing file paths. 
 
@@ -135,7 +135,7 @@ The key steps include removing unnecessary columns, handling missing values, spe
 
 The script ensures data consistency and usability for subsequent analysis by eliminating irrelevant information and managing missing values appropriately.
 
-* 06 - DataCleaning_Dataset2
+* **06 - DataCleaning_Dataset2**.
 
 The script revolves around the processing and refinement of data related to software commit stored in a CSV file named 'Commits_metadata_p2.csv'. The primary actions include reading the CSV file using the Pandas library, removing unnecessary columns such as 'RepositoryName', 'Authors', 'CommitId', 'ModifiedFiles', and 'DateTime', and checking for the presence of missing values. 
 
@@ -143,7 +143,7 @@ Specifically focusing on the 'CommitName' column, the script identifies and hand
 
 This systematic data-cleaning process aims to enhance the quality and usability of the commit data for subsequent analysis.
 
-* 07 - SDG_Dataset1
+* **07 - SDG_Dataset1**.
 
 The script is focused on implementing a text classification model using machine learning techniques. It begins by importing necessary libraries, such as NumPy, Pandas, and scikit-learn modules. The core dataset, presumably representing cleaned commit data, is read from a CSV file named 'NewDF_cleaned_AllCategories.csv'. The data is then split into training and testing sets using the train_test_split function.
 
@@ -151,7 +151,7 @@ The script employs a machine learning pipeline consisting of CountVectorizer, Tf
 
 Following the training phase, the model is applied to a different dataset ('dataframe1.csv') to predict categories for commit names. The predictions are inserted into the dataframe, and the modified dataframe is saved as 'dataframe1.csv'. Overall, the script demonstrates a basic text classification workflow using scikit-learn for commit message categorization.
 
-* 08 - SDG_Dataset2
+* **08 - SDG_Dataset2**.
 
 This script focuses on implementing a text classification model using scikit-learn, particularly the SGDClassifier (Stochastic Gradient Descent). The dataset, presumably representing cleaned commit data, is read from a CSV file named 'NewDF_cleaned_AllCategories.csv'. The data is then split into training and testing sets using the train_test_split function.
 
