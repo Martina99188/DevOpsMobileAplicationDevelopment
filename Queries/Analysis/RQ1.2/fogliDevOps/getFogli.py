@@ -2,7 +2,7 @@ import pandas as pd
 import csv
 from csv import writer
 
-Lists_path1 = r'../AnalisiFinale.csv' 
+Lists_path1 = r'../FinalAnalysis.csv' 
 Lists_path2 = r'../CommitHash.csv' 
 
 commits = pd.read_csv(Lists_path1, usecols=[0,1], skiprows=1)
