@@ -33,9 +33,8 @@ The code iterates through unique repositories, calculating the median time dista
 Using the `matplotlib` library, a boxplot is created to represent the distribution of time distances, including the median for each repository. Customizations are made to the plot, such as removing outliers and adding labels.
 
 Finally, the boxplot is displayed, clearly illustrating the distribution of time distances from a previous commit for each repository, with a focus on the median and other relevant details.
-
+  
   * **Q1.1.png**
-
 
 
   * **Q1.2.png**
