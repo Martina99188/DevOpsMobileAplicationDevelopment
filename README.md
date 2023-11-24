@@ -1,7 +1,10 @@
 # DevOpsMobileApllicationDevelopment
 
-In the file **RepositoryList + ManualAnalysis**, all the data on the repositories are taken into account, including a sample of 2000 commits, and a commit hash spreadsheet.
+In the folder **ManualAnalysis/** there is the following file:
+* **RepositoryList + ManualAnalysis**.
+There is all the data on the extracted repositories, a sample of 2000 commits and a spreadsheet of commit hashes.
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 In the folder **First Analysis** there are the following files:
 * **01 - DataCleaning**.
