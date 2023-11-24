@@ -1,4 +1,4 @@
-# DevOpsMobileApllicationDevelopment
+# DevOpsMobileAplicationDevelopment
 
 In the folder **ManualAnalysis/** there is the following file:
 * **RepositoryList + ManualAnalysis**.
