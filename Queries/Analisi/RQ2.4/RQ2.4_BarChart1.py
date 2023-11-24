@@ -17,7 +17,7 @@ barChartData = pd.cut(numOfContributors, [0,3,5,10,15,30,50,100, np.inf], labels
 barChart = barChartData.value_counts().plot.bar(color="green")
 
 plt.xticks(rotation=0)
-plt.title("Distribution of the Number of Contributors Per Repository")
+plt.title("Distribution of the Number of Contributors For Repository")
 plt.xlabel('Number Of Contributors') 
 plt.ylabel('Number Of Repositories')
 

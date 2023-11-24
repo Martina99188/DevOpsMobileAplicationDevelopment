@@ -13,7 +13,7 @@ fig, ax = plt.subplots(1, figsize=(11, 7))
 
 box1 = plt.boxplot([releasesFrequency],showfliers=False)
 
-plt.title("Release Frequency Per Repository")
+plt.title("Release Frequency For Repository")
 plt.ylabel('Release Frequency (Days)') 
 x = np.array([1])
 my_xticks = ['Percentage Of Repositories']

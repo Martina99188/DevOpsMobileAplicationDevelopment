@@ -13,7 +13,7 @@ barChartData = pd.cut(modifiedFilesDf, [0,1,3,7,14,30,59,np.inf], labels=['[0,1]
 barChart = barChartData.value_counts().plot.bar(color="green")
 
 plt.xticks(rotation=0)
-plt.title("Average Frequency Of Commitments Per Repository")
+plt.title("Average Frequency Of Commitments For Repository")
 plt.xlabel('Commit Frequency (Days)') 
 plt.ylabel('Number Of Repositories')
 
