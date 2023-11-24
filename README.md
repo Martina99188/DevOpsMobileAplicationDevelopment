@@ -2,12 +2,24 @@
 
 In the folder **ManualAnalysis/** there is the following file:
 * **RepositoryList + ManualAnalysis**.
-There is all the data on the extracted repositories, a sample of 2000 commits and a spreadsheet of commit hashes.
+There is all the data on the extracted repositories, a sample of 2000 commits, and a spreadsheet of commit hashes.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-In the folder **Queries** there are the following files:
+In the folder **Queries** there are 2 folders. The folder called Metadata has the following files:
 
+* **Releases_metadata**.
+
+This file contains the name of the repository, the release, the release date, the author, and the last commit ID. 
+
+* **Repository_metadata**.
+
+This file contains the name of the repository, the number of stars, the number of forks, the number of commits, the number of releases, the number of contributors, the number of issues and the number of pull requests. All this data will allow graphs to be created as required.
+
+
+The second folder is called Analysis and it has the following files:
+
+* ****.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
