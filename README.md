@@ -20,10 +20,10 @@ This file contains the name of the repository, the number of stars, the number o
 The second folder is called **Analysis** and it has the following folders:
 
 * **Q1** that contains:
-** **Q1_BoxPlot**
+  * **Q1_BoxPlot**
 
-** **Q1.1**
-** **Q1.2**
+  * **Q1.1**
+  * **Q1.2**
 
 
 * 
