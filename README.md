@@ -253,6 +253,12 @@ Following the training phase, the model is applied to a different dataset ('data
 
 This script focuses on implementing a text classification model using scikit-learn, particularly the SGDClassifier (Stochastic Gradient Descent). The dataset, presumably representing cleaned commit data, is read from a CSV file named 'NewDF_cleaned_AllCategories.csv'. The data is then split into training and testing sets using the train_test_split function.
 
+* **Commits_50x7.csv**.
+
+* **NewDF_cleaned_AllCategories.csv**.
+
+* **NewSample.csv**.
+
 The core of the script involves the creation of a text classification pipeline, including processes such as Count Vectorization and TF-IDF transformation. The SGDClassifier is used as the classification model. The accuracy of the model is evaluated on both the training and testing sets.
 
 After the training phase, the model is applied to a different dataset ('dataframe2.csv') to predict categories for commit names. The predictions are inserted into the dataframe, and the modified dataframe is saved as 'dataframe2.csv'. In summary, the script showcases a typical text classification workflow using scikit-learn for commit message categorization.
