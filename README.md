@@ -6,7 +6,7 @@ There is all the data on the extracted repositories, a sample of 2000 commits, a
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-In the folder **Queries** there are 2 folders. The folder called Metadata has the following files:
+In the folder **Queries** there are 2 folders. The folder called **Metadata** has the following files:
 
 * **Releases_metadata**.
 
@@ -17,9 +17,16 @@ This file contains the name of the repository, the release, the release date, th
 This file contains the name of the repository, the number of stars, the number of forks, the number of commits, the number of releases, the number of contributors, the number of issues and the number of pull requests. All this data will allow graphs to be created as required.
 
 
-The second folder is called Analysis and it has the following files:
+The second folder is called **Analysis** and it has the following folders:
 
-* ****.
+* **Q1** that contains:
+** **Q1_BoxPlot**
+
+** **Q1.1**
+** **Q1.2**
+
+
+* 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
