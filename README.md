@@ -20,7 +20,33 @@ This file contains the name of the repository, the number of stars, the number o
 The second folder is called **Analysis** and it has the following folders:
 
 * **Q1** that contains:
-  * **Q1_BoxPlot.py**
+  * **sheetsDevOps** folder:
+    * **FinalAnalysis.csv**
+The file contains the commit and the categories associated with each commit.
+
+    * **HashCommit.csv** 
+The file contains the commit and ID associated with each commit.
+
+  * **compareMetadata**
+
+This Python code utilizes the `pandas` and `csv` libraries to process and filter data from multiple CSV files. 
+
+The code reads three CSV files containing metadata, final analysis results, and commit hashes. It creates dataframes using the `pandas` library.
+
+It then iterates through the rows of the 'metadata' dataframe, checking if the current commit ID is present in both the 'HashCommit' and 'FinalAnalysis' dataframes.
+
+If the commit is found in both dataframes and is labeled as a "RELEASE" in the 'FinalAnalysis' dataframe, the relevant metadata is selected and written to a new CSV file named 'CorrespondencesDeploy.csv'.
+
+The code is essentially filtering and extracting specific information based on conditions related to commit IDs and labels, and the selected data is saved in a separate CSV file for further analysis or reference.
+
+  * **CorrespondencesDeploy**
+
+ 
+  * **CorrespondencesTest**
+
+
+* **Q2**
+  * **Q2_BoxPlot.py**
 
 This Python code utilizes the `matplotlib`, `numpy`, `pandas`, and `statistics` libraries to analyze and visualize the distribution of time distances from a previous commit across a set of software repositories.
 
@@ -34,45 +60,10 @@ Using the `matplotlib` library, a boxplot is created to represent the distributi
 
 Finally, the boxplot is displayed, clearly illustrating the distribution of time distances from a previous commit for each repository, with a focus on the median and other relevant details.
   
-  * **Q1.1.png**
+  * **Q2.1.png**
 
 
-  * **Q1.2.png**
-
-
-* **Q2** that contains:
-
-  * **getSheets.py**
-
-The code reads two CSV files, 'FinalAnalysis.csv' and 'CommitHash.csv', using the pandas library, selecting specific columns, and skipping the first row.
-
-For the 'FinalAnalysis.csv' file, the code converts the dataframe to a list and then iterates through each commit. It extracts the commit name and label, processes the data, and writes the information to a new CSV file named 'AnalisiFinale.csv'.
-
-For the 'CommitHash.csv' file, a similar process is followed. The code converts the dataframe to a list, iterates through each commit, extracts the commit name and ID, processes the data, and writes the information to a new CSV file named 'HashCommit.csv'.
-
-In summary, the code is designed to extract and process specific information from two input CSV files and create two new CSV files with the processed data for further analysis or reference.
-
-  * **FinalAnalysis.csv**
-
-
-
-  * **HashCommit.csv**
-
-
-
-  * **compareMetadata.py**
-
-This Python code utilizes the `pandas` and `csv` libraries to process and filter data from multiple CSV files. 
-
-The code reads three CSV files containing metadata, final analysis results, and commit hashes. It creates dataframes using the `pandas` library.
-
-It then iterates through the rows of the 'metadata' dataframe, checking if the current commit ID is present in both the 'HashCommit' and 'FinalAnalysis' dataframes.
-
-If the commit is found in both dataframes and is labeled as a "RELEASE" in the 'FinalAnalysis' dataframe, the relevant metadata is selected and written to a new CSV file named 'CorrespondencesDeploy.csv'.
-
-The code is essentially filtering and extracting specific information based on conditions related to commit IDs and labels, and the selected data is saved in a separate CSV file for further analysis or reference.
-
-  * **CorrespondencesDeploy.csv**
+  * **Q2.2.png**
 
 
 * **Q3** that contains:
@@ -253,12 +244,12 @@ Following the training phase, the model is applied to a different dataset ('data
 
 This script focuses on implementing a text classification model using scikit-learn, particularly the SGDClassifier (Stochastic Gradient Descent). The dataset, presumably representing cleaned commit data, is read from a CSV file named 'NewDF_cleaned_AllCategories.csv'. The data is then split into training and testing sets using the train_test_split function.
 
+The core of the script involves the creation of a text classification pipeline, including processes such as Count Vectorization and TF-IDF transformation. The SGDClassifier is used as the classification model. The accuracy of the model is evaluated on both the training and testing sets.
+
+After the training phase, the model is applied to a different dataset ('dataframe2.csv') to predict categories for commit names. The predictions are inserted into the dataframe, and the modified dataframe is saved as 'dataframe2.csv'. In summary, the script showcases a typical text classification workflow using scikit-learn for commit message categorization.
+
 * **Commits_50x7.csv**.
 
 * **NewDF_cleaned_AllCategories.csv**.
 
 * **NewSample.csv**.
-
-The core of the script involves the creation of a text classification pipeline, including processes such as Count Vectorization and TF-IDF transformation. The SGDClassifier is used as the classification model. The accuracy of the model is evaluated on both the training and testing sets.
-
-After the training phase, the model is applied to a different dataset ('dataframe2.csv') to predict categories for commit names. The predictions are inserted into the dataframe, and the modified dataframe is saved as 'dataframe2.csv'. In summary, the script showcases a typical text classification workflow using scikit-learn for commit message categorization.
