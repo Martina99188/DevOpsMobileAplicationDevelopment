@@ -36,11 +36,9 @@ It then iterates through the rows of the 'metadata' dataframe, checking if the c
 If the commit is found in both dataframes and is labeled as a "RELEASE" in the 'FinalAnalysis' dataframe, the relevant metadata is selected and written to a new CSV file named 'CorrespondencesDeploy.csv'.
 
 The code is essentially filtering and extracting specific information based on conditions related to commit IDs and labels, and the selected data is saved in a separate CSV file for further analysis or reference.
-
   * **CorrespondencesDeploy**
 
 The file contains all information about the repository and the commits considered for the Deploy phase.
-
   * **CorrespondencesTest**
 
 The file contains all information about the repository and the commits considered for the Test phase.
