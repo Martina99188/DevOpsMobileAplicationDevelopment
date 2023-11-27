@@ -14,7 +14,7 @@ This file contains the name of the repository, the release, the release date, th
 
 * **Repository_metadata.csv**.
 
-This file contains the name of the repository, the number of stars, the number of forks, the number of commits, the number of releases, the number of contributors, the number of issues and the number of pull requests. All this data will allow graphs to be created as required.
+This file contains the name of the repository, the number of stars, the number of forks, the number of commits, the number of releases, the number of contributors, the number of issues, and the number of pull requests. All this data will allow graphs to be created as required.
 
 
 The second folder is called **Analysis** and it has the following folders:
@@ -43,11 +43,11 @@ The code is essentially filtering and extracting specific information based on c
 
   * **CorrespondencesDeploy**
 
-The file contains all information about the repository and the commits taken into account for the Deploy phase.
+The file contains all information about the repository and the commits considered for the Deploy phase.
 
   * **CorrespondencesTest**
 
-The file contains all information about the repository and the commits taken into account for the Test phase.
+The file contains all information about the repository and the commits considered for the Test phase.
 
 * **Q2**
   * **Q2_BoxPlot.py**
@@ -66,9 +66,11 @@ Finally, the boxplot is displayed, clearly illustrating the distribution of time
   
   * **Q2.1.png**
 
+Commits’ time distance from the previous release.
 
   * **Q2.2.png**
 
+Commits’ time distance from the next release.
 
 * **Q3** that contains:
 
@@ -87,6 +89,7 @@ Finally, the boxplot is displayed using plt.show(). The visualization provides a
 
   * **Q3.png**
 
+New release frequency grouped by the repository.
 
 * **Q4** that contains:
 
@@ -104,6 +107,7 @@ Finally, the bar chart is displayed using plt.show(). The visualization provides
 
   * **Q4.png**
 
+Number of modified files per commit.
 
 * **Q5** that contains:
 
@@ -121,6 +125,7 @@ Finally, the bar chart is displayed using plt.show(). The visualization provides
 
   * **Q5.png**
 
+Commits’ average frequency grouped by repository.
 
 * **Q6** that contains:
 
@@ -138,6 +143,7 @@ Finally, the bar chart is displayed using plt.show(). The visualization provides
 
   * **Q6.1.png**
 
+The number of contributors grouped by the repository.
 
   * **Q6_BarChart2.py***
 
@@ -152,6 +158,8 @@ The x-axis tick labels, title, and axis labels are customized for clarity. Each 
 Finally, the bar chart is displayed using plt.show(). The visualization provides an overview of the distribution of contribution percentages across the analyzed contributors.
 
   * **Q6.2.png**
+
+Percentage of contribution.
 
 * **Q7** that contains:
 
@@ -169,6 +177,7 @@ Finally, the bar chart is displayed using plt.show(). The visualization provides
 
   * **Q7.1.png**
 
+Number of pull requests per repository.
 
   * **Q7_BarChart2.py**
 
@@ -183,6 +192,8 @@ The x-axis tick labels, title, and axis labels are customized for clarity. The y
 Finally, the bar chart is displayed using plt.show(). The visualization provides insight into the distribution of the number of forks across the analyzed repositories.
  
   * **Q7.2.png**
+
+Number of forks per repository.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -254,6 +265,11 @@ After the training phase, the model is applied to a different dataset ('datafram
 
 * **Commits_50x7.csv**.
 
+
+
 * **NewDF_cleaned_AllCategories.csv**.
 
+
+
 * **NewSample.csv**.
+
