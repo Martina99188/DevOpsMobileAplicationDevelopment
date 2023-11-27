@@ -22,13 +22,9 @@ The second folder is called **Analysis** and it has the following folders:
 * **Q1** that contains:
   * **sheetsDevOps** folder:
  
-    * **FinalAnalysis.csv**
-    * 
-The file contains the commit and the categories associated with each commit.
+    * **FinalAnalysis.csv**: The file contains the commit and the categories associated with each commit.
 
-    * **HashCommit.csv** 
-
-The file contains the commit and ID associated with each commit.
+    * **HashCommit.csv**: The file contains the commit and ID associated with each commit.
 
   * **compareMetadata**
 
