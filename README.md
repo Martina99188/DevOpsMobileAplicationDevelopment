@@ -22,7 +22,7 @@ The second folder is called **Analysis** and it has the following folders:
 * **Q1** that contains:
   * **sheetsDevOps** folder:
  
-    * **FinalAnalysis.csv**.The file contains the commit and the categories associated with each commit.
+    * **FinalAnalysis.csv**. The file contains the commit and the categories associated with each commit.
     * **HashCommit.csv**. The file contains the commit and ID associated with each commit.
 
   * **compareMetadata**
@@ -81,7 +81,6 @@ A boxplot is created using matplotlib to display the distribution of release fre
 The plot is customized with a title, y-axis label, and x-axis tick labels. The median, whiskers, and caps of the boxplot are annotated with their respective values for additional information.
 
 Finally, the boxplot is displayed using plt.show(). The visualization provides an overview of the release frequency distribution for the analyzed repositories.
-
 
   * **Q3.png**
 
@@ -261,11 +260,12 @@ After the training phase, the model is applied to a different dataset ('datafram
 
 * **Commits_50x7.csv**.
 
-
+In this file, 50 commits per category were extracted from the total two million commits. Subsequently, the veracity of the commits was checked manually, and finally, a table with the percentages of correct commits was defined.
 
 * **NewDF_cleaned_AllCategories.csv**.
 
-
+Once the Data Cleaning step has been performed, the new dataframe is saved in this file.
 
 * **NewSample.csv**.
 
+This file contains the new, refined sample, with the addition of new commits for the PLAN phase and the NO LABEL phase.
