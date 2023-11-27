@@ -25,6 +25,12 @@ The second folder is called **Analysis** and it has the following folders:
     - **FinalAnalysis.csv**. The file contains the commit and the categories associated with each commit.
     - **HashCommit.csv**. The file contains the commit and ID associated with each commit.
 
+  - **CorrespondencesDeploy**
+The file contains all information about the repository and the commits considered for the Deploy phase.
+  
+  - **CorrespondencesTest**
+The file contains all information about the repository and the commits considered for the Test phase.
+
   - **compareMetadata**
 This Python code utilizes the `pandas` and `csv` libraries to process and filter data from multiple CSV files. 
 
@@ -35,17 +41,6 @@ It then iterates through the rows of the 'metadata' dataframe, checking if the c
 If the commit is found in both dataframes and is labeled as a "RELEASE" in the 'FinalAnalysis' dataframe, the relevant metadata is selected and written to a new CSV file named 'CorrespondencesDeploy.csv'.
 
 The code is essentially filtering and extracting specific information based on conditions related to commit IDs and labels, and the selected data is saved in a separate CSV file for further analysis or reference.
-
-  - **CorrespondencesDeploy**
-  - **CorrespondencesTest**
-
-
-  - **CorrespondencesDeploy**
-
-The file contains all information about the repository and the commits considered for the Deploy phase.
-  
-
-The file contains all information about the repository and the commits considered for the Test phase.
 
 * **Q2**
   * **Q2_BoxPlot.py**
