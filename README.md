@@ -8,24 +8,24 @@ There is all the data on the extracted repositories, a sample of 2000 commits, a
 
 In the folder **Queries** there are 2 folders. The folder called **Metadata** has the following files:
 
-* **Releases_metadata.csv**.
+- **Releases_metadata.csv**.
 
 This file contains the name of the repository, the release, the release date, the author, and the last commit ID. 
 
-* **Repository_metadata.csv**.
+- **Repository_metadata.csv**.
 
 This file contains the name of the repository, the number of stars, the number of forks, the number of commits, the number of releases, the number of contributors, the number of issues, and the number of pull requests. All this data will allow graphs to be created as required.
 
 
 The second folder is called **Analysis** and it has the following folders:
 
-* **Q1** that contains:
-  * **sheetsDevOps** folder:
+- **Q1** that contains:
+  - **sheetsDevOps** folder:
  
-    * **FinalAnalysis.csv**. The file contains the commit and the categories associated with each commit.
-    * **HashCommit.csv**. The file contains the commit and ID associated with each commit.
+    - **FinalAnalysis.csv**. The file contains the commit and the categories associated with each commit.
+    - **HashCommit.csv**. The file contains the commit and ID associated with each commit.
 
-  * **compareMetadata**
+  - **compareMetadata**
 
 This Python code utilizes the `pandas` and `csv` libraries to process and filter data from multiple CSV files. 
 
@@ -36,10 +36,10 @@ It then iterates through the rows of the 'metadata' dataframe, checking if the c
 If the commit is found in both dataframes and is labeled as a "RELEASE" in the 'FinalAnalysis' dataframe, the relevant metadata is selected and written to a new CSV file named 'CorrespondencesDeploy.csv'.
 
 The code is essentially filtering and extracting specific information based on conditions related to commit IDs and labels, and the selected data is saved in a separate CSV file for further analysis or reference.
-  * **CorrespondencesDeploy**
+  - **CorrespondencesDeploy**
 
 The file contains all information about the repository and the commits considered for the Deploy phase.
-  * **CorrespondencesTest**
+  - **CorrespondencesTest**
 
 The file contains all information about the repository and the commits considered for the Test phase.
 
