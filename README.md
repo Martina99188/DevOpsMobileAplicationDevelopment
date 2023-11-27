@@ -26,6 +26,8 @@ The second folder is called **Analysis** and it has the following folders:
     - **HashCommit.csv**. The file contains the commit and ID associated with each commit.
 
   - **compareMetadata**
+  - **CorrespondencesDeploy**
+  - **CorrespondencesTest**
 
 This Python code utilizes the `pandas` and `csv` libraries to process and filter data from multiple CSV files. 
 
@@ -39,7 +41,7 @@ The code is essentially filtering and extracting specific information based on c
   - **CorrespondencesDeploy**
 
 The file contains all information about the repository and the commits considered for the Deploy phase.
-  - **CorrespondencesTest**
+  
 
 The file contains all information about the repository and the commits considered for the Test phase.
 
