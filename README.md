@@ -40,10 +40,10 @@ If the commit is found in both dataframes and is labeled as a "RELEASE" in the '
 The code is essentially filtering and extracting specific information based on conditions related to commit IDs and labels, and the selected data is saved in a separate CSV file for further analysis or reference.
 
   * **CorrespondencesDeploy**
+The file contains all information about the repository and the commits taken into account for the Deploy phase.
 
- 
   * **CorrespondencesTest**
-
+The file contains all information about the repository and the commits taken into account for the Test phase.
 
 * **Q2**
   * **Q2_BoxPlot.py**
