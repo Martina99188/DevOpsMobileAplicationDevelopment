@@ -26,9 +26,11 @@ The second folder is called **Analysis** and it has the following folders:
     - **HashCommit.csv**. The file contains the commit and ID associated with each commit.
 
   - **CorrespondencesDeploy**
+
 The file contains all information about the repository and the commits considered for the Deploy phase.
   
   - **CorrespondencesTest**
+
 The file contains all information about the repository and the commits considered for the Test phase.
 
   - **compareMetadata**
