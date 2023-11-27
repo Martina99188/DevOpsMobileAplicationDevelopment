@@ -22,12 +22,15 @@ The second folder is called **Analysis** and it has the following folders:
 * **Q1** that contains:
   * **sheetsDevOps** folder:
     * **FinalAnalysis.csv**
+
 The file contains the commit and the categories associated with each commit.
 
     * **HashCommit.csv** 
+
 The file contains the commit and ID associated with each commit.
 
   * **compareMetadata**
+
 This Python code utilizes the `pandas` and `csv` libraries to process and filter data from multiple CSV files. 
 
 The code reads three CSV files containing metadata, final analysis results, and commit hashes. It creates dataframes using the `pandas` library.
@@ -39,9 +42,11 @@ If the commit is found in both dataframes and is labeled as a "RELEASE" in the '
 The code is essentially filtering and extracting specific information based on conditions related to commit IDs and labels, and the selected data is saved in a separate CSV file for further analysis or reference.
 
   * **CorrespondencesDeploy**
+
 The file contains all information about the repository and the commits taken into account for the Deploy phase.
 
   * **CorrespondencesTest**
+
 The file contains all information about the repository and the commits taken into account for the Test phase.
 
 * **Q2**
