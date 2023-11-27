@@ -32,149 +32,49 @@ The second folder is called **Analysis** and it has the following folders:
   - **compareMetadata**. This Python code utilizes the `pandas` and `csv` libraries to process and filter data from multiple CSV files. The code reads three CSV files containing metadata, final analysis results, and commit hashes. It creates dataframes using the `pandas` library. It then iterates through the rows of the 'metadata' dataframe, checking if the current commit ID is present in both the 'HashCommit' and 'FinalAnalysis' dataframes. If the commit is found in both dataframes and is labeled as a "RELEASE" in the 'FinalAnalysis' dataframe, the relevant metadata is selected and written to a new CSV file named 'CorrespondencesDeploy.csv'. The code is essentially filtering and extracting specific information based on conditions related to commit IDs and labels, and the selected data is saved in a separate CSV file for further analysis or reference.
 
 * **Q2**
-  * **Q2_BoxPlot.py**
-
-This Python code utilizes the `matplotlib`, `numpy`, `pandas`, and `statistics` libraries to analyze and visualize the distribution of time distances from a previous commit across a set of software repositories.
-
-The process begins with reading a CSV file containing data about repository commits. The data is structured into a dataframe using the `pandas` library.
-
-Subsequently, time distances from previous commits are processed, disregarding zero values, and the results are stored in a NumPy array.
-
-The code iterates through unique repositories, calculating the median time distances from previous commits for each repository and saving the results in a list.
-
-Using the `matplotlib` library, a boxplot is created to represent the distribution of time distances, including the median for each repository. Customizations are made to the plot, such as removing outliers and adding labels.
-
-Finally, the boxplot is displayed, clearly illustrating the distribution of time distances from a previous commit for each repository, with a focus on the median and other relevant details.
+  * **Q2_BoxPlot.py**. This Python code utilizes the `matplotlib`, `numpy`, `pandas`, and `statistics` libraries to analyze and visualize the distribution of time distances from a previous commit across a set of software repositories. The process begins with reading a CSV file containing data about repository commits. The data is structured into a dataframe using the `pandas` library. Subsequently, time distances from previous commits are processed, disregarding zero values, and the results are stored in a NumPy array. The code iterates through unique repositories, calculating the median time distances from previous commits for each repository and saving the results in a list. Using the `matplotlib` library, a boxplot is created to represent the distribution of time distances, including the median for each repository. Customizations are made to the plot, such as removing outliers and adding labels. Finally, the boxplot is displayed, clearly illustrating the distribution of time distances from a previous commit for each repository, with a focus on the median and other relevant details.
   
-  * **Q2.1.png**
+  * **Q2.1.png**. Commits’ time distance from the previous release.
 
-Commits’ time distance from the previous release.
-
-  * **Q2.2.png**
-
-Commits’ time distance from the next release.
+  * **Q2.2.png**. Commits’ time distance from the next release.
 
 * **Q3** that contains:
 
-  * **Q3_BoxPlot.py**
+  * **Q3_BoxPlot.py**. The code reads a CSV file named 'RQ2.1.csv' containing data on repository names, the number of releases, and release frequencies in days. The data is organized into a dataframe using the pandas library. The release frequencies are extracted from the dataframe, and zero values are replaced with NaN (Not a Number) to avoid distortion in the boxplot. The cleaned data is then converted to a numpy array. A boxplot is created using matplotlib to display the distribution of release frequencies. The boxplot does not include outliers for a clearer representation. The plot is customized with a title, y-axis label, and x-axis tick labels. The median, whiskers, and caps of the boxplot are annotated with their respective values for additional information. Finally, the boxplot is displayed using plt.show(). The visualization provides an overview of the release frequency distribution for the analyzed repositories.
 
-The code reads a CSV file named 'RQ2.1.csv' containing data on repository names, the number of releases, and release frequencies in days. The data is organized into a dataframe using the pandas library.
-
-The release frequencies are extracted from the dataframe, and zero values are replaced with NaN (Not a Number) to avoid distortion in the boxplot. The cleaned data is then converted to a numpy array.
-
-A boxplot is created using matplotlib to display the distribution of release frequencies. The boxplot does not include outliers for a clearer representation.
-
-The plot is customized with a title, y-axis label, and x-axis tick labels. The median, whiskers, and caps of the boxplot are annotated with their respective values for additional information.
-
-Finally, the boxplot is displayed using plt.show(). The visualization provides an overview of the release frequency distribution for the analyzed repositories.
-
-  * **Q3.png**
-
-New release frequency grouped by the repository.
+  * **Q3.png**. New release frequency grouped by the repository.
 
 * **Q4** that contains:
 
-  * **Q4_BarChart.py**
+  * **Q4_BarChart.py**. The code reads a CSV file named 'RQ2.2.csv' containing data on repository names, commit IDs, and the number of modified files per commit. The data is organized into a dataframe using the pandas library. The number of modified files is extracted from the dataframe, and NaN (Not a Number) values are dropped. The cleaned data is then converted to a numpy array. A bar chart is created using matplotlib and the pd.cut function to categorize the number of modified files into bins. The chart displays the count of commits in each bin. The x-axis tick labels, title, and axis labels are customized for clarity. The bar chart labels each bar with the respective count of commits. Finally, the bar chart is displayed using plt.show(). The visualization provides insight into the distribution of the number of modified files per commit across the analyzed repositories.
 
-The code reads a CSV file named 'RQ2.2.csv' containing data on repository names, commit IDs, and the number of modified files per commit. The data is organized into a dataframe using the pandas library.
-
-The number of modified files is extracted from the dataframe, and NaN (Not a Number) values are dropped. The cleaned data is then converted to a numpy array.
-
-A bar chart is created using matplotlib and the pd.cut function to categorize the number of modified files into bins. The chart displays the count of commits in each bin.
-
-The x-axis tick labels, title, and axis labels are customized for clarity. The bar chart labels each bar with the respective count of commits.
-
-Finally, the bar chart is displayed using plt.show(). The visualization provides insight into the distribution of the number of modified files per commit across the analyzed repositories.
-
-  * **Q4.png**
-
-Number of modified files per commit.
+  * **Q4.png**. Number of modified files per commit.
 
 * **Q5** that contains:
 
-  * **Q5_BarChart.py**
+  * **Q5_BarChart.py**. The code reads a CSV file named 'RQ2.3.csv' containing data on repository names, the number of commits, and commit frequencies in days. The data is organized into a dataframe using the pandas library. The commit frequencies are extracted from the dataframe, and NaN (Not a Number) values are dropped. The cleaned data is then converted to a numpy array. A bar chart is created using matplotlib and the pd.cut function to categorize the commit frequencies into bins. The chart displays the count of repositories in each bin. The x-axis tick labels, title, and axis labels are customized for clarity. Each bar in the chart is labeled with the count of repositories it represents. Finally, the bar chart is displayed using plt.show(). The visualization provides an overview of the distribution of average commit frequencies across the analyzed repositories.
 
-The code reads a CSV file named 'RQ2.3.csv' containing data on repository names, the number of commits, and commit frequencies in days. The data is organized into a dataframe using the pandas library.
-
-The commit frequencies are extracted from the dataframe, and NaN (Not a Number) values are dropped. The cleaned data is then converted to a numpy array.
-
-A bar chart is created using matplotlib and the pd.cut function to categorize the commit frequencies into bins. The chart displays the count of repositories in each bin.
-
-The x-axis tick labels, title, and axis labels are customized for clarity. Each bar in the chart is labeled with the count of repositories it represents.
-
-Finally, the bar chart is displayed using plt.show(). The visualization provides an overview of the distribution of average commit frequencies across the analyzed repositories.
-
-  * **Q5.png**
-
-Commits’ average frequency grouped by repository.
+  * **Q5.png**. Commits’ average frequency grouped by repository.
 
 * **Q6** that contains:
 
-  * **Q6_BarChart1.py**
+  * **Q6_BarChart1.py**. The code reads a CSV file named 'RQ2.4.csv' containing data on repository names, the number of contributors, individual contributor names, and the percentage of contribution. The data is organized into a dataframe using the pandas library. The dataframe is then modified to focus on the number of contributors per repository, removing duplicate entries for each repository. A bar chart is created using matplotlib and the pd.cut function to categorize the number of contributors into bins. The chart displays the count of repositories in each bin. The x-axis tick labels, title, and axis labels are customized for clarity. Each bar in the chart is labeled with the count of repositories it represents. Finally, the bar chart is displayed using plt.show(). The visualization provides insight into the distribution of the number of contributors per repository across the analyzed dataset.
 
-The code reads a CSV file named 'RQ2.4.csv' containing data on repository names, the number of contributors, individual contributor names, and the percentage of contribution. The data is organized into a dataframe using the pandas library.
+  * **Q6.1.png**. The number of contributors grouped by the repository.
 
-The dataframe is then modified to focus on the number of contributors per repository, removing duplicate entries for each repository.
+  * **Q6_BarChart2.py***. The code reads a CSV file named 'RQ2.4.csv' containing data on repository names, the number of contributors, individual contributor names, and the percentage of contribution. The data is organized into a dataframe using the pandas library. The contribution percentages are extracted from the dataframe and converted to a numpy array. A bar chart is created using matplotlib and the pd.cut function to categorize the contribution percentages into bins. The chart displays the count of contributors in each bin. The x-axis tick labels, title, and axis labels are customized for clarity. Each bar in the chart is labeled with the count of contributors it represents. Finally, the bar chart is displayed using plt.show(). The visualization provides an overview of the distribution of contribution percentages across the analyzed contributors.
 
-A bar chart is created using matplotlib and the pd.cut function to categorize the number of contributors into bins. The chart displays the count of repositories in each bin.
-
-The x-axis tick labels, title, and axis labels are customized for clarity. Each bar in the chart is labeled with the count of repositories it represents.
-
-Finally, the bar chart is displayed using plt.show(). The visualization provides insight into the distribution of the number of contributors per repository across the analyzed dataset.
-
-  * **Q6.1.png**
-
-The number of contributors grouped by the repository.
-
-  * **Q6_BarChart2.py***
-
-The code reads a CSV file named 'RQ2.4.csv' containing data on repository names, the number of contributors, individual contributor names, and the percentage of contribution. The data is organized into a dataframe using the pandas library.
-
-The contribution percentages are extracted from the dataframe and converted to a numpy array.
-
-A bar chart is created using matplotlib and the pd.cut function to categorize the contribution percentages into bins. The chart displays the count of contributors in each bin.
-
-The x-axis tick labels, title, and axis labels are customized for clarity. Each bar in the chart is labeled with the count of contributors it represents.
-
-Finally, the bar chart is displayed using plt.show(). The visualization provides an overview of the distribution of contribution percentages across the analyzed contributors.
-
-  * **Q6.2.png**
-
-Percentage of contribution.
+  * **Q6.2.png**. Percentage of contribution.
 
 * **Q7** that contains:
 
-  * **Q7_BarChart1.py**
+  * **Q7_BarChart1.py**. The code reads a CSV file named 'RQ2.5.csv' containing data on repository names, the number of pull requests, and the number of forks. The data is organized into a dataframe using the pandas library. The number of pull requests is extracted from the dataframe and converted to a numpy array. A bar chart is created using matplotlib and the pd.cut function to categorize the number of pull requests into bins. The chart displays the count of repositories in each bin. The x-axis tick labels, title, and axis labels are customized for clarity. The y-axis ticks are manually set to specific values to better represent the data. Finally, the bar chart is displayed using plt.show(). The visualization provides insight into the distribution of the number of pull requests across the analyzed repositories.
 
-The code reads a CSV file named 'RQ2.5.csv' containing data on repository names, the number of pull requests, and the number of forks. The data is organized into a dataframe using the pandas library.
+  * **Q7.1.png**. Number of pull requests per repository.
 
-The number of pull requests is extracted from the dataframe and converted to a numpy array.
-
-A bar chart is created using matplotlib and the pd.cut function to categorize the number of pull requests into bins. The chart displays the count of repositories in each bin.
-
-The x-axis tick labels, title, and axis labels are customized for clarity. The y-axis ticks are manually set to specific values to better represent the data.
-
-Finally, the bar chart is displayed using plt.show(). The visualization provides insight into the distribution of the number of pull requests across the analyzed repositories.
-
-  * **Q7.1.png**
-
-Number of pull requests per repository.
-
-  * **Q7_BarChart2.py**
-
-The code reads a CSV file named 'RQ2.5.csv' containing data on repository names, the number of pull requests, and the number of forks. The data is organized into a dataframe using the pandas library.
-
-The number of forks is extracted from the dataframe and converted to a numpy array.
-
-A bar chart is created using matplotlib and the pd.cut function to categorize the number of forks into bins. The chart displays the count of repositories in each bin.
-
-The x-axis tick labels, title, and axis labels are customized for clarity. The y-axis ticks are manually set to specific values to better represent the data.
-
-Finally, the bar chart is displayed using plt.show(). The visualization provides insight into the distribution of the number of forks across the analyzed repositories.
+  * **Q7_BarChart2.py**. The code reads a CSV file named 'RQ2.5.csv' containing data on repository names, the number of pull requests, and the number of forks. The data is organized into a dataframe using the pandas library. The number of forks is extracted from the dataframe and converted to a numpy array. A bar chart is created using matplotlib and the pd.cut function to categorize the number of forks into bins. The chart displays the count of repositories in each bin. The x-axis tick labels, title, and axis labels are customized for clarity. The y-axis ticks are manually set to specific values to better represent the data. Finally, the bar chart is displayed using plt.show(). The visualization provides insight into the distribution of the number of forks across the analyzed repositories.
  
-  * **Q7.2.png**
-
-Number of forks per repository.
+  * **Q7.2.png**. Number of forks per repository.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
