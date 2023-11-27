@@ -2,7 +2,7 @@ import pandas as pd
 import csv
 from csv import writer
 
-csvMetadata = r'./Queries/Query/Q1/Q1_deploy.csv'
+csvMetadata = r'./Queries/Query/Q1/Q1.csv'
 csvFinalAnalysis = r'./Queries/Analysis/Q1/sheetsDevOps/FinalAnalysis.csv'
 csvHashCommit = r'./Queries/Analysis/Q1/sheetsDevOps/HashCommit.csv'
 
