@@ -28,7 +28,6 @@ The file contains the commit and the categories associated with each commit.
 The file contains the commit and ID associated with each commit.
 
   * **compareMetadata**
-
 This Python code utilizes the `pandas` and `csv` libraries to process and filter data from multiple CSV files. 
 
 The code reads three CSV files containing metadata, final analysis results, and commit hashes. It creates dataframes using the `pandas` library.
