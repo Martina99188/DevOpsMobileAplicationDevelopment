@@ -3,7 +3,7 @@ import pandas as pd
 from pathlib import Path
 
 # Read a .csv file 'Commits_metadata_p2.csv'
-dataframe = pd.read_csv('../Commits_metadata_p2.csv', names = ['RepositoryName', 'CommitName', 'Authors', 'CommitId', 'ModifiedFiles', 'DateTime'], sep=',')
+dataframe = pd.read_csv('./AutomaticAnalysis/Commits_metadata_p2.csv', names = ['RepositoryName', 'CommitName', 'Authors', 'CommitId', 'ModifiedFiles', 'DateTime'], sep=',')
 
 print(dataframe)
 
@@ -26,6 +26,6 @@ dataframe.isnull().any()
 print(dataframe.dtypes)
 
 # Saving the cleaned dataframe, so we can easly use it.
-filepath = Path('../Dataframe2.csv')
+filepath = Path('./AutomaticAnalysis/Dataframe2.csv')
 filepath.parent.mkdir(parents=True, exist_ok=True)
 dataframe.to_csv(filepath, sep=',')

@@ -10,7 +10,7 @@ from sklearn.linear_model import SGDClassifier
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 # Read file .csv cleaned
-df = pd.read_csv('../NewDF_cleaned_AllCategories.csv')
+df = pd.read_csv('./AutomaticAnalysis/NewDF_cleaned_AllCategories.csv')
 print(df)
 
 # Splitting data into training and testing ones.
@@ -40,7 +40,7 @@ testing_acc = round(accuracy_score(y_test, y_predicted_test), 3)
 print(f'Training Accuracy: {training_acc}')
 print(f'Testing Accuracy: {testing_acc}')
 
-df_All = pd.read_csv('../Dataframe1.csv')
+df_All = pd.read_csv('./AutomaticAnalysis/Dataframe1.csv')
 print(df_All)
 
 X_All = df_All['CommitName']

@@ -3,7 +3,7 @@ import pandas as pd
 from pathlib import Path
 
 # Read a .csv file 'Commits_metadata_p1.csv'
-dataframe = pd.read_csv('../Commits_metadata_p1.csv', sep=',')
+dataframe = pd.read_csv('./AutomaticAnalysis/Commits_metadata_p1.csv', sep=',')
 
 # Delete firsts columns
 dataframe.drop(['RepositoryName', 'Authors', 'CommitId', 'ModifiedFiles', 'DateTime'], axis=1, inplace=True)
@@ -24,6 +24,6 @@ dataframe.isnull().any()
 print(dataframe.dtypes)
 
 # Saving the cleaned dataframe, so we can easly use it.
-filepath = Path('../Dataframe1.csv')
+filepath = Path('./AutomaticAnalysis/Dataframe1.csv')
 filepath.parent.mkdir(parents=True, exist_ok=True)
 dataframe.to_csv(filepath, sep=',')
