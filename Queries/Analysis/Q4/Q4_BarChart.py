@@ -2,14 +2,14 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-csvFile = pd.read_csv('./Query/Q4/Q4.csv', sep=',', names=['RepositoryName','CommitId', 'NumOfModifiedFiles'],
+csvFile = pd.read_csv('./Queries/Query/Q4/Q4.csv', sep=',', names=['RepositoryName','CommitId', 'NumOfModifiedFiles'],
                       skiprows=1)
 
 dfCsv = pd.DataFrame(csvFile)
 
 modifiedFilesDf = dfCsv["NumOfModifiedFiles"].dropna().to_numpy()
 
-barChartData = pd.cut(modifiedFilesDf, [0,4,8,11,16,26,50,np.inf], labels=['0-3','4-7','8-10','11-15','16-25','26-49','50+'])
+barChartData = pd.cut(modifiedFilesDf, [0,1,3,6,10,np.inf], labels=['0','1-2','3-5','6-9','10+'])
 barChart = barChartData.value_counts().plot.bar(color="green")
 
 plt.xticks(rotation=0)

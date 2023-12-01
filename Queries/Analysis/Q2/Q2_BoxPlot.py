@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import statistics
 
-csvFile = pd.read_csv('./Query/Q2/Q2_days.csv', sep=',', names=['RepositoryName','CommitId','CommitDatetime','FirstReleaseBeforeCommit','ReleaseBeforeDatetime',
+csvFile = pd.read_csv('./Queries/Query/Q2/Q2_days.csv', sep=',', names=['RepositoryName','CommitId','CommitDatetime','FirstReleaseBeforeCommit','ReleaseBeforeDatetime',
                       'MillisecondsBeforeCommit','FirstReleaseAfterCommit','ReleaseAfterDatetime','MillisecondsAfterCommit'],
                       skiprows=1)
 

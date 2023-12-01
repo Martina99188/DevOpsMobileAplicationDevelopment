@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-csvFile = pd.read_csv('./Query/Q7.1/Q7.1.csv', sep=',', names=['RepositoryName','NumOfPullRequests', 'NumOfForks'],
+csvFile = pd.read_csv('./Queries/Query/Q7/Q7.csv', sep=',', names=['RepositoryName','NumOfPullRequests', 'NumOfForks'],
                       skiprows=1)
 
 dfCsv = pd.DataFrame(csvFile)

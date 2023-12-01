@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-csvFile = pd.read_csv('./Query/Q6.1/Q6.1.csv', sep=',', names=['RepositoryName','NumOfContributors', 'Contributor', '%OfContribution'],
+csvFile = pd.read_csv('./Queries/Query/Q6/Q6.csv', sep=',', names=['RepositoryName','NumOfContributors', 'Contributor', '%OfContribution'],
                       skiprows=1)
 
 dfCsv = pd.DataFrame(csvFile)
@@ -13,7 +13,7 @@ numOfContributors = repositoryContributorsDf.drop_duplicates(subset=['Repository
 
 numOfContributors = numOfContributors['NumOfContributors'].to_numpy()
 
-barChartData = pd.cut(numOfContributors, [0,3,5,10,15,30,50,100, np.inf], labels=['[0,3]','[4,5]','[6,10]','[11,15]','[16-30]','[31-50]','[51,100]','[100+]'], )
+barChartData = pd.cut(numOfContributors, [0,2,5,9,10,np.inf], labels=['[0]','[1,2]','[3,5]','[6,9]','[10+]'])
 barChart = barChartData.value_counts().plot.bar(color="green")
 
 plt.xticks(rotation=0)
