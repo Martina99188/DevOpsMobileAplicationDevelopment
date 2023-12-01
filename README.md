@@ -2,7 +2,7 @@
 
 In the folder **ManualAnalysis/** there is the following file:
 - **RepositoryList + ManualAnalysis.csv**.
-There is all the data on the extracted repositories, a sample of 2000 commits, and a spreadsheet of commit hashes.
+There are all the data on the extracted repositories, a sample of 2000 commits, an analysis of the categories associated with each commit for each reviewer, and a spreadsheet of commit hashes.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
