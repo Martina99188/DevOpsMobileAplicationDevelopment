@@ -155,3 +155,7 @@ Once the Data Cleaning step has been performed, the new dataframe is saved in th
 * **NewSample.csv**.
 
 This file contains the new, refined sample, with the addition of new commits for the PLAN phase and the NO LABEL phase.
+
+* **Distribution_Commits_DevOps_Phases**.
+
+This file contains the tables of the total dataset divided into two parts (as it was too large for a single excel file) with the relative number for each category associated with each commit. There is also a single table with the sum of the total number of categories and a pie chart containing the total categories associated with all commits.
